@@ -1,0 +1,15 @@
+Hi Ronit,
+
+The Email automation completed at {0}.
+
+Logs below -
+
+{1}
+
+Also Please find the attachments(if any)
+
+
+
+
+Regards,
+Email Automation Bot

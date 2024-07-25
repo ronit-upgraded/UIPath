@@ -1,0 +1,509 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="708.8,1552.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:snm="clr-namespace:System.Net.Mail;assembly=System.Net.Mail" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabf="clr-namespace:UiPath.Mail.Activities.Business.ForEachMail;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Mail.Activities.Business.ForEachMail</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="608,1488" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:IList(x:String)" Name="OutputReport" />
+      <Variable x:TypeArguments="x:String" Name="OutputString" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:CreateList x:TypeArguments="x:String" DisplayName="Create Output Report" sap:VirtualizedContainerService.HintSize="545.6,56.8" sap2010:WorkflowViewState.IdRef="CreateList`1_1" NewList="[OutputReport]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CreateList>
+    <ui:DeleteFolderX DisplayName="Delete Old Attachments" sap:VirtualizedContainerService.HintSize="545.6,56.8" sap2010:WorkflowViewState.IdRef="DeleteFolderX_1" Path="Attachments" Recursive="True">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:DeleteFolderX>
+    <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create New Folder" sap:VirtualizedContainerService.HintSize="545.6,56.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="Attachments">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CreateDirectory>
+    <umab:OutlookApplicationCard Account="ronit.mishra0001@gmail.com" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Outlook Desktop" sap:VirtualizedContainerService.HintSize="545.6,1180.8" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
+      <umab:OutlookApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do Activities" sap:VirtualizedContainerService.HintSize="512,967.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="EmailBody" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:ForEachEmailX DisplayName="For Each Email in Outlook" sap:VirtualizedContainerService.HintSize="449.6,716.8" sap2010:WorkflowViewState.IdRef="ForEachEmailX_1" IncludeSubfolders="False" Mails="[Outlook.Folder(&quot;Inbox&quot;)]" NumberOfEmailsLimit="10" UnreadOnly="True" WithAttachmentsOnly="False">
+              <umab:ForEachEmailX.Body>
+                <ActivityAction x:TypeArguments="snm:MailMessage, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="CurrentMail" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Do Activities for each Mail" sap:VirtualizedContainerService.HintSize="416,420.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Time and Sub to List" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_1" ItemToAppend="[Now.ToString+&quot; : &quot;+CurrentMail.Subject.ToString]" List="[OutputReport]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uasa:AppendItemToList>
+                    <If Condition="[CurrentMail.Subject.Contains(&quot;Read&quot;)]" DisplayName="Cotains Read" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="If_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then Mark Read" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <umab:MarkMailAsReadX DisplayName="Mark Email As Read" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="MarkMailAsReadX_3" MailMessage="[CurrentMail]" MarkAs="Read">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </umab:MarkMailAsReadX>
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Read Log" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_5" ItemToAppend="Email Read " List="[OutputReport]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uasa:AppendItemToList>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else Nothing" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CurrentMail.Subject.ToString.ToLower.Contains(&quot;save&quot;)]" DisplayName="Contains Save" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="If_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then Save Email" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <umab:SaveMailX DisplayName="Save The Email" FileName="[CurrentMail.Subject.ToString]" FolderPath="C:\Ronit\Practice\UIPath\EmailAutomation\Saved Emails" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="SaveMailX_1" MailMessage="[CurrentMail]" />
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Saved Log" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_3" ItemToAppend="Email Saved " List="[OutputReport]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uasa:AppendItemToList>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CurrentMail.Subject.ToString.ToLower.Contains(&quot;download&quot;)]" DisplayName="Contains Download" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="If_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then Download" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <umab:SaveMailAttachmentsX Attachments="{x:Null}" DisplayName="Save Attachments" ExcludeInlineAttachments="True" FolderPath="C:\Ronit\Practice\UIPath\EmailAutomation\Attachments" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="SaveMailAttachmentsX_2" Message="[CurrentMail]" OverwriteExisting="True">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </umab:SaveMailAttachmentsX>
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Downloaded Log" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_2" ItemToAppend="Email Downloaded " List="[OutputReport]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uasa:AppendItemToList>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else Nothing To Do" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CurrentMail.Subject.ToString.ToLower.Contains(&quot;forward&quot;)]" DisplayName="Contains Forward" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="If_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then Forward" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <umab:ForwardMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" NewSubject="{x:Null}" BodyType="Text" DisplayName="Forward The Email" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="ForwardMailX_1" IsDraft="False" MailMessage="[CurrentMail]" MaxBodyDocumentSizeMB="2" To="ronitmishra.yt@gmail.com" UseDocumentAsBody="False">
+                            <umab:ForwardMailX.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                            </umab:ForwardMailX.Files>
+                            <umab:ForwardMailX.HtmlBodyFromFile>
+                              <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="{x:Null}">
+                                <umabh:HtmlContentArgument.RuntimeImages>
+                                  <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                </umabh:HtmlContentArgument.RuntimeImages>
+                                <umabh:HtmlContentArgument.ValueMappings>
+                                  <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                                </umabh:HtmlContentArgument.ValueMappings>
+                              </umabh:HtmlContentArgument>
+                            </umab:ForwardMailX.HtmlBodyFromFile>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </umab:ForwardMailX>
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Forwarded Log" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_4" ItemToAppend="Email Forwarded " List="[OutputReport]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uasa:AppendItemToList>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else Skip" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <If Condition="[CurrentMail.Subject.ToString.ToLower.Contains(&quot;delete&quot;)]" DisplayName="Contains Delete" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="If_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Then Delete" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <umab:DeleteMailX DisplayName="Delete The Email" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="DeleteMailX_1" MailMessage="[CurrentMail]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </umab:DeleteMailX>
+                          <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Deleted Log" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_6" ItemToAppend="Email Deleted " List="[OutputReport]">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uasa:AppendItemToList>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else No" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </umab:ForEachEmailX.Body>
+              <umab:ForEachEmailX.MailFilter>
+                <umabf:MailFilterArgument LogicalOperator="And">
+                  <umabf:MailFilterArgument.Filters>
+                    <scg:List x:TypeArguments="umabf:SingleMailFilterArgument" Capacity="1">
+                      <umabf:SingleMailFilterArgument DateEqualsFilter="{x:Null}" Criteria="Subject" DateFilter="SevenDays" Operator="Contains" Value="Dummy" />
+                    </scg:List>
+                  </umabf:MailFilterArgument.Filters>
+                </umabf:MailFilterArgument>
+              </umab:ForEachEmailX.MailFilter>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </umab:ForEachEmailX>
+            <Assign DisplayName="Output Report to String" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[OutputString]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[string.Join(Environment.NewLine,OutputReport)]</InArgument>
+              </Assign.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Assign>
+            <ui:ReadTextFile File="{x:Null}" Content="[EmailBody]" DisplayName="Read email_temp File" FileName="email_temp.txt" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ReadTextFile>
+            <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Outlook]" Body="[string.Format(EmailBody,Now.ToString,OutputString)]" BodyType="Text" DisplayName="Send Output Email" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="[&quot;Output Report &quot;+Now.ToString]" To="ronit.mishra0001@gmail.com" UseDocumentAsBody="False">
+              <umab:SendMailX.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                  <InArgument x:TypeArguments="x:String">Attachments</InArgument>
+                </scg:List>
+              </umab:SendMailX.Files>
+              <umab:SendMailX.HtmlBodyFromFile>
+                <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="{x:Null}">
+                  <umabh:HtmlContentArgument.RuntimeImages>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </umabh:HtmlContentArgument.RuntimeImages>
+                  <umabh:HtmlContentArgument.ValueMappings>
+                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                  </umabh:HtmlContentArgument.ValueMappings>
+                </umabh:HtmlContentArgument>
+              </umab:SendMailX.HtmlBodyFromFile>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </umab:SendMailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:OutlookApplicationCard.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </umab:OutlookApplicationCard>
+    <ui:LogMessage DisplayName="Log Completion" sap:VirtualizedContainerService.HintSize="545.6,48" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Run Completed&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
