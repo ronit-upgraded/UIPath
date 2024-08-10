@@ -1,0 +1,29 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "FName&Sequence_1",
+        "LName&Sequence_1",
+        "DOB&Sequence_1",
+        "Desg&Sequence_1",
+        "Mobile&Sequence_1",
+        "Gender&Sequence_1",
+        "ID&Sequence_1",
+        "Maiil&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

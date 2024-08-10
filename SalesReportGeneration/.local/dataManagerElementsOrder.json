@@ -1,0 +1,29 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Total&Sequence_2",
+        "Others&Sequence_2",
+        "Medical&Sequence_2",
+        "Electronic&Sequence_2",
+        "Employee&Sequence_2",
+        "Department&Sequence_2",
+        "Company&Sequence_2",
+        "dt_Data&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

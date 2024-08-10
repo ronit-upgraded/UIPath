@@ -1,0 +1,596 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="744,715.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main " sap:VirtualizedContainerService.HintSize="515.2,650.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FName" />
+      <Variable x:TypeArguments="x:String" Name="LName" />
+      <Variable x:TypeArguments="x:String" Name="DOB" />
+      <Variable x:TypeArguments="x:String" Name="Desg" />
+      <Variable x:TypeArguments="x:String" Name="Mobile" />
+      <Variable x:TypeArguments="x:String" Name="Gender" />
+      <Variable x:TypeArguments="x:String" Name="ID" />
+      <Variable x:TypeArguments="x:String" Name="Maiil" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Get Info" sap:VirtualizedContainerService.HintSize="452.8,56.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="First Name" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter First Name" Title="Enter First Name">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[FName]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Last Name" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Enter Last Name" Title="Enter Last Name">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[LName]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="DateOfbirth" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Enter DOB (dd/mm/yyyy)" Title="Enter DOB">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[DOB]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Designation" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Enter Designation" Title="Enter Designation">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Desg]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Mobile No" sap:VirtualizedContainerService.HintSize="387.2,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Enter Mobile" Title="Enter Mobile">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Mobile]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" DisplayName="Gender" sap:VirtualizedContainerService.HintSize="387.2,48" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="Choose Gender" OptionsString="Male;Female" Title="Enter Gender">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[Gender]</OutArgument>
+        </ui:InputDialog.Result>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:InputDialog>
+    </Sequence>
+    <TryCatch DisplayName="Try Catch -1" sap:VirtualizedContainerService.HintSize="452.8,456.8" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="Perform" sap:VirtualizedContainerService.HintSize="416,193.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Open Excelcult.com" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="46df5697-abc6-4f72-a034-81add49ed821" Version="V2" WindowResize="Minimize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Fill Data" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Parallel DisplayName="Enter Parallel" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="Parallel_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type 'First Name*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Text="[FName]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="713, 541, 247, 43" CvType="InputBox" DesignTimeRectangle="717, 543, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='fname' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fname' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e5109bb6-3ec2-487d-8ef4-76066db65b87" InformativeScreenshot="6e7d12f92e8d74cd7ecd5964a41719b3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="616, 552, 95, 18" CvTextArgument="First Name*" CvType="Text" DesignTimeRectangle="555, 548, 162, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='First Name*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First Name*' tag='LABEL' type='' class='' check:innerText='First Name*' /&gt;" Guid="392614b4-da63-4e35-92c9-133ecf30d940" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type 'Last Name*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="Simulate" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Text="[LName]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="1116, 541, 248, 43" CvType="InputBox" DesignTimeRectangle="1120, 543, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='lname' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lname' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="2428d121-9409-4c4b-a2fe-2b0ed5e54c5d" InformativeScreenshot="77dde12448aad5295c9486da48a93a21.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="1020, 554, 93, 16" CvTextArgument="Last Name*" CvType="Text" DesignTimeRectangle="959, 548, 161, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Last Name*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Name*' tag='LABEL' type='' class='' check:innerText='Last Name*' /&gt;" Guid="66416883-6e12-4cee-8c90-f16f57e1a2b9" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type 'DOB*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="Simulate" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Text="[DOB]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="713, 591, 247, 43" CvType="InputBox" DesignTimeRectangle="717, 593, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='dob' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dob' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="e91da35a-c3d3-41ce-84b8-f53b5608ff73" InformativeScreenshot="64b99f6824bae3680ec1382cb2219917.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="667, 604, 42, 16" CvTextArgument="DOB*" CvType="Text" DesignTimeRectangle="555, 598, 162, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='DOB*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='DOB*' tag='LABEL' type='' class='' check:innerText='DOB*' /&gt;" Guid="1ea325de-2ad0-4dbe-a881-9cbf480f6ee7" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type 'Designation*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="Simulate" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Text="[Desg]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="1116, 591, 247, 43" CvType="InputBox" DesignTimeRectangle="1120, 593, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='designation' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='designation' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="070da83e-2d81-4752-b7bf-5aeb96d7b607" InformativeScreenshot="ea24dce5bf7c211a4e3eef14ef1327e7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="1012, 602, 101, 21" CvTextArgument="Designation*" CvType="Text" DesignTimeRectangle="959, 598, 161, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Designation*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Designation*' tag='LABEL' type='' class='' check:innerText='Designation*' /&gt;" Guid="efc4f796-e231-486d-a6a1-2e8fee19cb78" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type 'Phone*'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="Simulate" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Text="[Mobile]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="713, 643, 248, 43" CvType="InputBox" DesignTimeRectangle="717, 645, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='mobile' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mobile' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="c72cfaa1-d41e-404b-94dd-3d59b6065178" InformativeScreenshot="367a0dd6ec6cc8f370b5d86bcc1d872b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="582, 654, 128, 17" CvTextArgument="Mobile Number*" CvType="Text" DesignTimeRectangle="555, 650, 162, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Mobile Number*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Mobile Number*' tag='LABEL' type='' class='' check:innerText='Mobile Number*' /&gt;" Guid="c96fce48-127f-4b41-b0f5-d84e2b26b4e5" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <If Condition="[Gender = &quot;Male&quot;]" DisplayName="If Gender" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="If_1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Sequence DisplayName="Male" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on 'Male'" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="1109, 654, 20, 21" CvType="RadioButton" DesignTimeRectangle="1112, 657, 17, 16" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='male' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='male' tag='INPUT' type='radio' class='' aaname='Male' /&gt;" Guid="058b24a1-ce19-407b-8d21-40ab48380fb0" InformativeScreenshot="96b05c58e2335c43e10403d81d5e559c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="1132, 656, 40, 16" CvTextArgument="Male" CvType="Text" DesignTimeRectangle="1133, 654, 45, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl class='radio' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='radio' tag='LABEL' type='' aaname='Male' check:innerText='Male' /&gt;" Guid="4766508e-bae1-4dd8-8a5b-7e5d38650040" SearchSteps="Selector, FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Female" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on 'Female'" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="1178, 654, 21, 21" CvType="RadioButton" DesignTimeRectangle="1182, 657, 16, 16" DesignTimeScaleFactor="1.25" ElementType="RadioButton" FullSelectorArgument="&lt;webctrl id='female' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='female' tag='INPUT' type='radio' class='' aaname='Female' /&gt;" Guid="2412527c-ee0d-462f-bc17-18a0984abfb5" InformativeScreenshot="08a8654a79c9b571ceda2b558c9ad897.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="1201, 656, 58, 16" CvTextArgument="Female" CvType="Text" DesignTimeRectangle="1203, 654, 63, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Female' class='radio' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Female' class='radio' tag='LABEL' type='' check:innerText='Female' /&gt;" Guid="5bb80b13-ecd7-4142-80d7-75725cd13f93" SearchSteps="Selector, FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Terms" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="552, 824, 21, 20" CvType="CheckBox" DesignTimeRectangle="555, 826, 17, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="033a2158-d67b-4c6e-bbed-dbfda900eb29" InformativeScreenshot="abd18c363201b22fa063041d9b40191c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvTextArea="677, 825, 209, 18" CvTextArgument="Privacy Policy for W3Docs." CvType="Text" DesignTimeRectangle="679, 823, 208, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='post-2245' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='post-2245' tag='A' type='' class='' aaname='Privacy Policy for W3Docs.' check:innerText='Privacy Policy for W3Docs.' /&gt;" Guid="8c4233c8-c282-47c3-a6fc-c877533bdaa3" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Parallel>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Submit" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="b1bf6d0c-dac8-4839-b883-2f1ec81558a4" CvElementArea="536, 881, 845, 58" CvTextArea="916, 900, 81, 18" CvTextArgument="SUBMIT" CvType="Button" DesignTimeRectangle="540, 884, 837, 53" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Submit' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Submit' tag='BUTTON' type='submit' class='' check:innerText='SUBMIT' /&gt;" Guid="90e1314b-040e-4866-af06-92b0f0d7406d" InformativeScreenshot="b829ff10b5dad7e87c2ccb5d9a354f8f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                  <Parallel DisplayName="Parallel Get" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Parallel_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get 'Employee Id*'" sap:VirtualizedContainerService.HintSize="240,40" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" TextString="[ID]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="ad0890dd-6ce7-4bda-80e4-ef37f61d87c9" CvElementArea="714, 570, 246, 42" CvType="InputBox" DesignTimeRectangle="717, 572, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='EmployeeId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='EmployeeId' tag='INPUT' type='text' class='' placeholder='Employee Id will appear here ' aaname='' /&gt;" Guid="f220dfc2-8040-4960-86ab-f2f1f83f556b" ImageBase64="" InformativeScreenshot="1587969b92e5124f46a03ec52c80807f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ad0890dd-6ce7-4bda-80e4-ef37f61d87c9" CvTextArea="607, 581, 103, 21" CvTextArgument="Employee Id*" CvType="Text" DesignTimeRectangle="555, 577, 162, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Employee Id*' check:innerText='Employee Id*' /&gt;" Guid="ede253b4-0576-470e-b0bd-815a5c5ecba2" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                    <uix:NGetText DisplayName="Get 'Official Mail Id*'" sap:VirtualizedContainerService.HintSize="243.2,40" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="46df5697-abc6-4f72-a034-81add49ed821" TextString="[Maiil]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://excelcult.com/hr-on-boarding-process-form/" CVScreenId="ad0890dd-6ce7-4bda-80e4-ef37f61d87c9" CvElementArea="1117, 571, 247, 42" CvType="InputBox" DesignTimeRectangle="1120, 572, 242, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='EmployeeEmail' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='EmployeeEmail' tag='INPUT' type='text' class='' placeholder='Employee Email Id will appear here' aaname='' /&gt;" Guid="47e7b0bc-7cae-4ef9-92f6-418f94b466fd" ImageBase64="" InformativeScreenshot="75a2e76456e063f41a04ccf1d2616568.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="ad0890dd-6ce7-4bda-80e4-ef37f61d87c9" CvTextArea="994, 581, 119, 17" CvTextArgument="Official Mail Id*" CvType="Text" DesignTimeRectangle="959, 577, 161, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Official Mail Id*' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Official Mail Id*' tag='LABEL' type='' class='' check:innerText='Official Mail Id*' /&gt;" Guid="4ea86d67-6408-4baa-90a6-7ef6bd56e5b7" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NGetText>
+                  </Parallel>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN7SURBVFhHxdZfSFNxFAfwOStKl2aJZjZKzUgcWam7d+slovAhC8tqD5X5kIYV6y8FViRE2R+K/mERJZYEUUR/Kcr0Tsv+URBRPpUviQQJkZD/Ur+d33WzeXd2t5XUhQ9sZ+d3zrl3270/Q86W3P+KDQYLtfYUKLZp3GfBYoOB4L4U1eeSDsIld6gUWzleSFFcbiBs0B/AEAZFXktNWwg0WnoVuRBlBiO31h82yIHLakO9/IJprPUS9TY7V4PDBr3hYba5T5Gr+11SH9PMDzW3GvXZZq6mNzYo4E5mBF3u3VSofWhxGf2KjK4aK/rd77trJPTVSUNy3Nqpxh68zozgeghsEC57Np3FJ6agSgzQemMOnlek4815Cz5fn4OeWnYAFQ3aLGpyvXwCAi0q0RbREkM48ydi1YJY9QpwORolXC+fgCCSNYt9NJ5JR5jBAAO5sDOZzdEY3gFuHZiuNhcOFpnZHI2/G4D+CXhXORMVW5PUyx4XM3JwANMYI3Jt41BebMaT0+n0lViHrHULfQDRtOZYGgpyqOG43w0DiRxtxBJ7DK7uS0XP48HfR2gD9NLfajEV4RqMHmXEgXVTsN2RgB2OSTi+KQXRpnA2V0ozoeOhekVCG6DzkRUJ433POjoyHA+OzAA+ngQ6vwDdbUDrXbw6Z0HCBN/88VEj8O1e1p99BU2XMrBuURzmWsZi3qwobFwar8bEZ9tWJmBvYTL2F02Dc3kiftBZivtB6epE+j3EYGFWNDbkxeND1UD+Hw2gp7ZiPk44U1G+PglXymbTjWgum+dleAdAWyPQRZe/6yvQ0QI8XcDn/Ta8A7yvmonDJSk4uTkNby8OXmY9IQzQYMujBT81BYYQt+LKXck45ZyKnzrPAZUi98JlW8r18gl49NRZM+iBVMsWDE0dqBbXQ2CDHuoOqEHKpyIfNUWDQE9TRVouanC1Pdiglro3cMml9Fj12RswxB5gt94ewBsb9AfPbIl0Zpdpa+a7OxqIVdNZT+bW+sMGA+lRJJkGeeY1wHNqLHO5gbDBYABlRhpiDW1AC3BtRTiXEww2qIeOVFLjVkUs5Kb7vYNbo4cN6qHDSsSD5iwpJIdIs/u1hVujhw3qocMzQBPJJ0fJUy43GGxQDx2eAe6RM2QP+U5uk2XcGj1sUA8dsaTYzUFMZLX7vd87nj9s8N/JNfwClv+GPQkjCbMAAAAASUVORK5CYII=" InformativeScreenshot="045f000af928b133c02703a38d6d1e17.jpg" Selector="&lt;html app='chrome.exe' title='HR On-Boarding Process Form - ExcelCult' /&gt;" Title="techlistic.com/p/selenium-practice-form.html" Url="https://excelcult.com/hr-on-boarding-process-form/" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Output" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Mail : &quot;+Maiil+Environment.NewLine+&quot;ID : &quot;+ID]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:MessageBox>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="419.2,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Output Error" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Error" Message="[exception.Message]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:LogMessage>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:LogMessage DisplayName="Log Complete" sap:VirtualizedContainerService.HintSize="452.8,48" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Completed&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+  </Sequence>
+</Activity>
