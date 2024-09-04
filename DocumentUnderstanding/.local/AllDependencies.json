@@ -19,6 +19,22 @@
           }
         }
       },
+      "AvalonEdit/6.1.3.50": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ICSharpCode.AvalonEdit.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Azure.Core/1.18.0": {
         "type": "package",
         "dependencies": {
@@ -69,7 +85,7 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.3.0": {
+      "BouncyCastle.Cryptography/2.4.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {
@@ -314,10 +330,11 @@
           }
         }
       },
-      "MailKit/4.4.0": {
+      "MailKit/4.7.1.1": {
         "type": "package",
         "dependencies": {
-          "MimeKit": "4.4.0"
+          "MimeKit": "4.7.1",
+          "System.Formats.Asn1": "8.0.1"
         },
         "compile": {
           "lib/net8.0/_._": {
@@ -1614,13 +1631,12 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "MimeKit/4.4.0": {
+      "MimeKit/4.7.1": {
         "type": "package",
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "8.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0"
+          "BouncyCastle.Cryptography": "2.4.0",
+          "System.Formats.Asn1": "8.0.1",
+          "System.Security.Cryptography.Pkcs": "8.0.0"
         },
         "compile": {
           "lib/net8.0/_._": {
@@ -1804,6 +1820,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
             "related": ".xml"
           }
         }
@@ -2660,7 +2689,7 @@
           "lib/netstandard1.1/System.Drawing.Primitives.dll": {}
         }
       },
-      "System.Formats.Asn1/8.0.0": {
+      "System.Formats.Asn1/8.0.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/_._": {
@@ -4123,23 +4152,26 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/8.0.0": {
+      "System.Text.Encoding.CodePages/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net8.0/System.Text.Encoding.CodePages.dll": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/netcoreapp3.1/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -4556,7 +4588,7 @@
           }
         }
       },
-      "UiPath.ConnectionClient/2.0.3": {
+      "UiPath.ConnectionClient/2.0.4": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -5443,28 +5475,29 @@
           }
         }
       },
-      "UiPath.Mail.Activities/1.23.1": {
+      "UiPath.Mail.Activities/1.23.11": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Calendar.v3": "1.55.0.2554",
           "Google.Apis.Gmail.v1": "1.55.0.2510",
           "Google.Apis.PeopleService.v1": "1.55.0.2567",
           "HtmlAgilityPack": "1.11.38",
-          "MailKit": "4.4.0",
+          "MailKit": "4.7.1.1",
           "Microsoft.Extensions.FileSystemGlobbing": "6.0.0",
           "Microsoft.Graph": "4.11.0",
           "Newtonsoft.Json": "13.0.1",
           "System.ComponentModel.Annotations": "5.0.0",
-          "System.Configuration.ConfigurationManager": "5.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.0",
           "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7",
           "System.IdentityModel.Tokens.Jwt": "6.34.0",
           "System.Linq.Async.Queryable": "5.0.0",
           "System.Net.Http": "4.3.4",
-          "System.Security.Cryptography.ProtectedData": "5.0.0",
+          "System.Security.Cryptography.ProtectedData": "6.0.0",
           "System.ValueTuple": "4.5.0",
           "UiPath.Activities.RuntimeGovernance": "1.1.6",
-          "UiPath.CodedWorkflows": "24.4.0-preview",
-          "UiPath.ConnectionClient": "2.0.3",
+          "UiPath.CodedWorkflows": "24.10.0",
+          "UiPath.ConnectionClient": "2.0.4",
+          "UiPath.OfficeLibs": "1.0.0",
           "UiPath.Platform": "24.2.0",
           "UiPath.Telemetry.Client": "2.1.3"
         },
@@ -5474,9 +5507,6 @@
         "runtime": {
           "lib/net6.0-windows7.0/Interop.Domino.UiPath.dll": {},
           "lib/net6.0-windows7.0/Microsoft.Exchange.WebServices.dll": {},
-          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll": {},
-          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll": {},
-          "lib/net6.0-windows7.0/Office.dll": {},
           "lib/net6.0-windows7.0/UiPath.Mail.Activities.Api.dll": {
             "related": ".xml"
           },
@@ -5609,6 +5639,122 @@
           }
         }
       },
+      "UiPath.MLServices.Activities/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.MLServices.Activities.Design.dll": {},
+          "lib/net5.0-windows7.0/UiPath.MLServices.Activities.dll": {},
+          "lib/net5.0-windows7.0/UiPath.MLServices.dll": {}
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MLServices.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MLServices.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MLServices.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MLServices.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MLServices.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MLServices.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MLServices.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MLServices.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.OCR.Activities/3.20.3": {
         "type": "package",
         "dependencies": {
@@ -5731,6 +5877,21 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "UiPath.OfficeLibs/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.PowerPoint.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll": {},
+          "lib/net6.0-windows7.0/OFFICE.dll": {},
+          "lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll": {}
+        }
       },
       "UiPath.OpenTelemetry.Contracts/2.1.3": {
         "type": "package",
@@ -6517,6 +6678,117 @@
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
       },
+      "UiPath.WebAPI.Activities/1.20.1": {
+        "type": "package",
+        "dependencies": {
+          "AvalonEdit": "6.1.3.50",
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
+          "UiPath.Platform": "23.4.1",
+          "UiPath.WebAPI.Activities.Runtime": "1.20.1"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.Design.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.RulesLibrary.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.ViewModels.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      },
+      "UiPath.WebAPI.Activities.Runtime/1.20.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
+          "UiPath.Platform": "23.4.1"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Web.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Web.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Web.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Web.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Web.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Web.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Web.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Web.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Web.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Web.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Web.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Web.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      },
       "UiPath.WordsToNumbers/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -6547,6 +6819,22 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "AvalonEdit/6.1.3.50": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/ICSharpCode.AvalonEdit.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
       },
       "Azure.Core/1.18.0": {
         "type": "package",
@@ -6598,7 +6886,7 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.3.0": {
+      "BouncyCastle.Cryptography/2.4.0": {
         "type": "package",
         "compile": {
           "lib/net6.0/_._": {
@@ -6843,10 +7131,11 @@
           }
         }
       },
-      "MailKit/4.4.0": {
+      "MailKit/4.7.1.1": {
         "type": "package",
         "dependencies": {
-          "MimeKit": "4.4.0"
+          "MimeKit": "4.7.1",
+          "System.Formats.Asn1": "8.0.1"
         },
         "compile": {
           "lib/net8.0/_._": {
@@ -8040,13 +8329,12 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "MimeKit/4.4.0": {
+      "MimeKit/4.7.1": {
         "type": "package",
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Security.Cryptography.Pkcs": "8.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0"
+          "BouncyCastle.Cryptography": "2.4.0",
+          "System.Formats.Asn1": "8.0.1",
+          "System.Security.Cryptography.Pkcs": "8.0.0"
         },
         "compile": {
           "lib/net8.0/_._": {
@@ -8230,6 +8518,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RestSharp/106.15.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RestSharp.dll": {
             "related": ".xml"
           }
         }
@@ -9168,7 +9469,7 @@
           "lib/netstandard1.1/System.Drawing.Primitives.dll": {}
         }
       },
-      "System.Formats.Asn1/8.0.0": {
+      "System.Formats.Asn1/8.0.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/_._": {
@@ -10527,20 +10828,23 @@
           }
         }
       },
-      "System.Text.Encoding.CodePages/8.0.0": {
+      "System.Text.Encoding.CodePages/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "compile": {
-          "lib/net8.0/_._": {
+          "lib/net6.0/_._": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll": {
+          "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/net6.0/_._": {}
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {
@@ -10956,7 +11260,7 @@
           }
         }
       },
-      "UiPath.ConnectionClient/2.0.3": {
+      "UiPath.ConnectionClient/2.0.4": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -11843,28 +12147,29 @@
           }
         }
       },
-      "UiPath.Mail.Activities/1.23.1": {
+      "UiPath.Mail.Activities/1.23.11": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Calendar.v3": "1.55.0.2554",
           "Google.Apis.Gmail.v1": "1.55.0.2510",
           "Google.Apis.PeopleService.v1": "1.55.0.2567",
           "HtmlAgilityPack": "1.11.38",
-          "MailKit": "4.4.0",
+          "MailKit": "4.7.1.1",
           "Microsoft.Extensions.FileSystemGlobbing": "6.0.0",
           "Microsoft.Graph": "4.11.0",
           "Newtonsoft.Json": "13.0.1",
           "System.ComponentModel.Annotations": "5.0.0",
-          "System.Configuration.ConfigurationManager": "5.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.0",
           "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7",
           "System.IdentityModel.Tokens.Jwt": "6.34.0",
           "System.Linq.Async.Queryable": "5.0.0",
           "System.Net.Http": "4.3.4",
-          "System.Security.Cryptography.ProtectedData": "5.0.0",
+          "System.Security.Cryptography.ProtectedData": "6.0.0",
           "System.ValueTuple": "4.5.0",
           "UiPath.Activities.RuntimeGovernance": "1.1.6",
-          "UiPath.CodedWorkflows": "24.4.0-preview",
-          "UiPath.ConnectionClient": "2.0.3",
+          "UiPath.CodedWorkflows": "24.10.0",
+          "UiPath.ConnectionClient": "2.0.4",
+          "UiPath.OfficeLibs": "1.0.0",
           "UiPath.Platform": "24.2.0",
           "UiPath.Telemetry.Client": "2.1.3"
         },
@@ -11874,9 +12179,6 @@
         "runtime": {
           "lib/net6.0-windows7.0/Interop.Domino.UiPath.dll": {},
           "lib/net6.0-windows7.0/Microsoft.Exchange.WebServices.dll": {},
-          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll": {},
-          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll": {},
-          "lib/net6.0-windows7.0/Office.dll": {},
           "lib/net6.0-windows7.0/UiPath.Mail.Activities.Api.dll": {
             "related": ".xml"
           },
@@ -12009,6 +12311,122 @@
           }
         }
       },
+      "UiPath.MLServices.Activities/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/UiPath.MLServices.Activities.Design.dll": {},
+          "lib/net5.0-windows7.0/UiPath.MLServices.Activities.dll": {},
+          "lib/net5.0-windows7.0/UiPath.MLServices.dll": {}
+        },
+        "resource": {
+          "lib/net5.0-windows7.0/de/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/de/UiPath.MLServices.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/es/UiPath.MLServices.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/fr/UiPath.MLServices.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ja/UiPath.MLServices.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/ko/UiPath.MLServices.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/pt/UiPath.MLServices.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/ru/UiPath.MLServices.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/tr/UiPath.MLServices.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.resources.dll": {
+            "locale": "zh-CN"
+          }
+        }
+      },
       "UiPath.OCR.Activities/3.20.3": {
         "type": "package",
         "dependencies": {
@@ -12131,6 +12549,21 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "UiPath.OfficeLibs/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.PowerPoint.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll": {},
+          "lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll": {},
+          "lib/net6.0-windows7.0/OFFICE.dll": {},
+          "lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll": {}
+        }
       },
       "UiPath.OpenTelemetry.Contracts/2.1.3": {
         "type": "package",
@@ -12917,6 +13350,117 @@
           "lib/net6.0-windows7.0/UiPath.Vision.dll": {}
         }
       },
+      "UiPath.WebAPI.Activities/1.20.1": {
+        "type": "package",
+        "dependencies": {
+          "AvalonEdit": "6.1.3.50",
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
+          "UiPath.Platform": "23.4.1",
+          "UiPath.WebAPI.Activities.Runtime": "1.20.1"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.Design.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.RulesLibrary.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.ViewModels.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.Design.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      },
+      "UiPath.WebAPI.Activities.Runtime/1.20.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "106.15.0",
+          "UiPath.Platform": "23.4.1"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Web.Activities.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Web.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Web.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Web.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Web.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Web.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Web.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Web.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Web.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Web.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Web.Activities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Web.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Web.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      },
       "UiPath.WordsToNumbers/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -12947,6 +13491,28 @@
         "lib/netstandard2.0/AutoMapper.dll",
         "lib/netstandard2.0/AutoMapper.pdb",
         "lib/netstandard2.0/AutoMapper.xml"
+      ]
+    },
+    "AvalonEdit/6.1.3.50": {
+      "sha512": "PtR4iPGu965DMSaDs0RyGi1LK94kUwWIZUGx1Jpg5vJr52KKQPR+KMwIthcpgoQR6xJWKM2MkZ41setJXuzMWA==",
+      "type": "package",
+      "path": "avalonedit/6.1.3.50",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "avalonedit.6.1.3.50.nupkg.sha512",
+        "avalonedit.nuspec",
+        "images/AvalonEditNuGetPackageIcon.png",
+        "lib/net40/ICSharpCode.AvalonEdit.dll",
+        "lib/net40/ICSharpCode.AvalonEdit.xml",
+        "lib/net45/ICSharpCode.AvalonEdit.dll",
+        "lib/net45/ICSharpCode.AvalonEdit.xml",
+        "lib/net5.0-windows7.0/ICSharpCode.AvalonEdit.dll",
+        "lib/net5.0-windows7.0/ICSharpCode.AvalonEdit.xml",
+        "lib/net6.0-windows7.0/ICSharpCode.AvalonEdit.dll",
+        "lib/net6.0-windows7.0/ICSharpCode.AvalonEdit.xml",
+        "lib/netcoreapp3.1/ICSharpCode.AvalonEdit.dll",
+        "lib/netcoreapp3.1/ICSharpCode.AvalonEdit.xml"
       ]
     },
     "Azure.Core/1.18.0": {
@@ -13007,16 +13573,16 @@
         "lib/netstandard2.0/BitMiracle.LibTiff.NET.xml"
       ]
     },
-    "BouncyCastle.Cryptography/2.3.0": {
-      "sha512": "IaVIiYxZLaBulveGDRUx/pBoW/Rc8QeXGF5u2E8xL8RWhVKCgfmtX9NUyGRbnSqnbFQU2zyP3MkXIdH+jUuQBw==",
+    "BouncyCastle.Cryptography/2.4.0": {
+      "sha512": "SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
       "type": "package",
-      "path": "bouncycastle.cryptography/2.3.0",
+      "path": "bouncycastle.cryptography/2.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
         "README.md",
-        "bouncycastle.cryptography.2.3.0.nupkg.sha512",
+        "bouncycastle.cryptography.2.4.0.nupkg.sha512",
         "bouncycastle.cryptography.nuspec",
         "lib/net461/BouncyCastle.Cryptography.dll",
         "lib/net461/BouncyCastle.Cryptography.xml",
@@ -13359,10 +13925,10 @@
         "lib/uap10.0/HtmlAgilityPack.pri"
       ]
     },
-    "MailKit/4.4.0": {
-      "sha512": "cv+oiAOn2+LhhGUVvxpJjEOIZOTZBFDIDO9ebOfxqqU1f/PllHpKr5VjWOBsqeLrb+zLisxWSQDzM5C64XrRNA==",
+    "MailKit/4.7.1.1": {
+      "sha512": "Y3okmIxu8g/ZcoJiE2i+dCeKgnNyddsXmcJslZnCPGVPP0aRyeVINHV1h97V+OVMdqjQI6O12J2p8Duwq5UEqQ==",
       "type": "package",
-      "path": "mailkit/4.4.0",
+      "path": "mailkit/4.7.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -13399,7 +13965,7 @@
         "lib/netstandard2.1/MailKit.dll.config",
         "lib/netstandard2.1/MailKit.pdb",
         "lib/netstandard2.1/MailKit.xml",
-        "mailkit.4.4.0.nupkg.sha512",
+        "mailkit.4.7.1.1.nupkg.sha512",
         "mailkit.nuspec"
       ]
     },
@@ -15343,10 +15909,10 @@
         "microsoft.xaml.behaviors.wpf.nuspec"
       ]
     },
-    "MimeKit/4.4.0": {
-      "sha512": "pKvznVpvK35cJb21LdjvhB3MW2FrlAqG3PH36uVKHhlgnfMS5tIRsKJEMgo0hiPyJJhN2f1llHptu2w8CvF9Vg==",
+    "MimeKit/4.7.1": {
+      "sha512": "Qoj4aVvhX14A1FNvaJ33hzOP4VZI2j+Mr38I9wSGcjMq4BYDtWLJG89aJ9nRW2cNfH6Czjwyp7+Mh++xv3AZvg==",
       "type": "package",
-      "path": "mimekit/4.4.0",
+      "path": "mimekit/4.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -15381,7 +15947,7 @@
         "lib/netstandard2.1/MimeKit.dll.config",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.4.4.0.nupkg.sha512",
+        "mimekit.4.7.1.nupkg.sha512",
         "mimekit.nuspec"
       ]
     },
@@ -15590,6 +16156,22 @@
         "lib/netstandard2.0/BouncyCastle.Crypto.xml",
         "portable.bouncycastle.1.8.9.nupkg.sha512",
         "portable.bouncycastle.nuspec"
+      ]
+    },
+    "RestSharp/106.15.0": {
+      "sha512": "HM7ohR6AscxedNenrrl93DSZG6hvdnA7O+NHyCl/6ZKTfn8psQ9rRmUpcb9eWr+140vmfxoVemql0bUoeGEW3A==",
+      "type": "package",
+      "path": "restsharp/106.15.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/RestSharp.dll",
+        "lib/net452/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.106.15.0.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
       ]
     },
     "runtime.any.System.Collections/4.3.0": {
@@ -17720,10 +18302,10 @@
         "system.drawing.primitives.nuspec"
       ]
     },
-    "System.Formats.Asn1/8.0.0": {
-      "sha512": "AJukBuLoe3QeAF+mfaRKQb2dgyrvt340iMBHYv+VdBzCUM06IxGlvl0o/uPOS7lHnXPN6u8fFRHSHudx5aTi8w==",
+    "System.Formats.Asn1/8.0.1": {
+      "sha512": "XqKba7Mm/koKSjKMfW82olQdmfbI5yqeoLV/tidRp7fbh5rmHAQ5raDI/7SU0swTzv+jgqtUGkzmFxuUg0it1A==",
       "type": "package",
-      "path": "system.formats.asn1/8.0.0",
+      "path": "system.formats.asn1/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -17744,7 +18326,7 @@
         "lib/net8.0/System.Formats.Asn1.xml",
         "lib/netstandard2.0/System.Formats.Asn1.dll",
         "lib/netstandard2.0/System.Formats.Asn1.xml",
-        "system.formats.asn1.8.0.0.nupkg.sha512",
+        "system.formats.asn1.8.0.1.nupkg.sha512",
         "system.formats.asn1.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -20994,44 +21576,41 @@
         "system.text.encoding.nuspec"
       ]
     },
-    "System.Text.Encoding.CodePages/8.0.0": {
-      "sha512": "OZIsVplFGaVY90G2SbpgU7EnCoOO5pw1t4ic21dBF3/1omrJFpAGoNAVpPyMVOC90/hvgkGG3VFqR13YgZMQfg==",
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "sha512": "ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
       "type": "package",
-      "path": "system.text.encoding.codepages/8.0.0",
+      "path": "system.text.encoding.codepages/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
-        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Text.Encoding.CodePages.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Text.Encoding.CodePages.targets",
+        "buildTransitive/netcoreapp3.1/_._",
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
-        "lib/net462/System.Text.Encoding.CodePages.dll",
-        "lib/net462/System.Text.Encoding.CodePages.xml",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.xml",
         "lib/net6.0/System.Text.Encoding.CodePages.dll",
         "lib/net6.0/System.Text.Encoding.CodePages.xml",
-        "lib/net7.0/System.Text.Encoding.CodePages.dll",
-        "lib/net7.0/System.Text.Encoding.CodePages.xml",
-        "lib/net8.0/System.Text.Encoding.CodePages.dll",
-        "lib/net8.0/System.Text.Encoding.CodePages.xml",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
         "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
         "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.dll",
         "runtimes/win/lib/net6.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.8.0.0.nupkg.sha512",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Text.Encoding.CodePages.xml",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
+        "system.text.encoding.codepages.6.0.0.nupkg.sha512",
         "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -23109,17 +23688,17 @@
         "uipath.codedworkflows.nuspec"
       ]
     },
-    "UiPath.ConnectionClient/2.0.3": {
-      "sha512": "9aykjTwvB0T1NygK7oqRIILraaSk4JNkZRMNii1oprGpOxcDHrP+a4NDevJEHLk1ML0kfiHPMTSdK3kK3sAOlQ==",
+    "UiPath.ConnectionClient/2.0.4": {
+      "sha512": "cJlTo8ca58Vg0ZIx3XlJ9pzUgWiJ61PIrwZ69/VMvUBGwLKk6f1caF5V9C2dJwAjIOU2nixTDfdnMm/dMEfgdQ==",
       "type": "package",
-      "path": "uipath.connectionclient/2.0.3",
+      "path": "uipath.connectionclient/2.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "UI_icon.png",
         "lib/net461/ConnectionClient.dll",
         "lib/net5.0/ConnectionClient.dll",
-        "uipath.connectionclient.2.0.3.nupkg.sha512",
+        "uipath.connectionclient.2.0.4.nupkg.sha512",
         "uipath.connectionclient.nuspec"
       ]
     },
@@ -24847,18 +25426,15 @@
         "uipath.intelligentocr.activities.nuspec"
       ]
     },
-    "UiPath.Mail.Activities/1.23.1": {
-      "sha512": "eHHMkz4g3P0Tfx7tbuB/7JCUMr7l8Pb+XhV/5Gc8W55vvGB41uBA34scIPgth5+X0BGg4tr2gskI0kSgmI3QRw==",
+    "UiPath.Mail.Activities/1.23.11": {
+      "sha512": "iJ1Ws3ZeF67otv/GKqF0s48qDmC2hAaLPZd/JzUW+HnP3lZ6uOVuPD7FBqpAf7BPt2V5fjlKoojeBeZUyTIrdQ==",
       "type": "package",
-      "path": "uipath.mail.activities/1.23.1",
+      "path": "uipath.mail.activities/1.23.11",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net461/Interop.Domino.UiPath.dll",
-        "lib/net461/Microsoft.Office.Interop.Outlook.dll",
-        "lib/net461/Microsoft.Office.Interop.Word.dll",
-        "lib/net461/Office.dll",
         "lib/net461/UiPath.Mail.Activities.Design.dll",
         "lib/net461/UiPath.Mail.Activities.Package.pdb",
         "lib/net461/UiPath.Mail.Activities.dll",
@@ -24905,9 +25481,6 @@
         "lib/net461/zu/UiPath.Mail.resources.dll",
         "lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
         "lib/net6.0-windows7.0/Microsoft.Exchange.WebServices.dll",
-        "lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
-        "lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
-        "lib/net6.0-windows7.0/Office.dll",
         "lib/net6.0-windows7.0/UiPath.Mail.Activities.Api.dll",
         "lib/net6.0-windows7.0/UiPath.Mail.Activities.Api.xml",
         "lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
@@ -24980,12 +25553,20 @@
         "tools/net461/MainSessionServer/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
         "tools/net461/MainSessionServer/Microsoft.Extensions.Options.dll",
         "tools/net461/MainSessionServer/Microsoft.Extensions.Primitives.dll",
-        "tools/net461/MainSessionServer/Microsoft.IO.RecyclableMemoryStream.dll",
         "tools/net461/MainSessionServer/Microsoft.Win32.Primitives.dll",
         "tools/net461/MainSessionServer/Newtonsoft.Json.dll",
+        "tools/net461/MainSessionServer/Nito.AsyncEx.Context.dll",
+        "tools/net461/MainSessionServer/Nito.AsyncEx.Coordination.dll",
+        "tools/net461/MainSessionServer/Nito.AsyncEx.Interop.WaitHandles.dll",
+        "tools/net461/MainSessionServer/Nito.AsyncEx.Oop.dll",
+        "tools/net461/MainSessionServer/Nito.AsyncEx.Tasks.dll",
+        "tools/net461/MainSessionServer/Nito.Cancellation.dll",
+        "tools/net461/MainSessionServer/Nito.Collections.Deque.dll",
+        "tools/net461/MainSessionServer/Nito.Disposables.dll",
         "tools/net461/MainSessionServer/System.AppContext.dll",
         "tools/net461/MainSessionServer/System.Buffers.dll",
         "tools/net461/MainSessionServer/System.Collections.Concurrent.dll",
+        "tools/net461/MainSessionServer/System.Collections.Immutable.dll",
         "tools/net461/MainSessionServer/System.Collections.NonGeneric.dll",
         "tools/net461/MainSessionServer/System.Collections.Specialized.dll",
         "tools/net461/MainSessionServer/System.Collections.dll",
@@ -25040,6 +25621,7 @@
         "tools/net461/MainSessionServer/System.Net.WebSockets.dll",
         "tools/net461/MainSessionServer/System.Numerics.Vectors.dll",
         "tools/net461/MainSessionServer/System.ObjectModel.dll",
+        "tools/net461/MainSessionServer/System.Private.Uri.dll",
         "tools/net461/MainSessionServer/System.Reflection.DispatchProxy.dll",
         "tools/net461/MainSessionServer/System.Reflection.Extensions.dll",
         "tools/net461/MainSessionServer/System.Reflection.Primitives.dll",
@@ -25095,8 +25677,91 @@
         "tools/net461/MainSessionServer/UiPath.MainSessionServer.Shared.dll",
         "tools/net461/MainSessionServer/UiPath.MainSessionServer.Shared.pdb",
         "tools/net461/MainSessionServer/netstandard.dll",
-        "uipath.mail.activities.1.23.1.nupkg.sha512",
+        "uipath.mail.activities.1.23.11.nupkg.sha512",
         "uipath.mail.activities.nuspec"
+      ]
+    },
+    "UiPath.MLServices.Activities/1.2.1": {
+      "sha512": "TMIhrSveTtd4blLAiw1VCq3V+4ZK8SXx/qrXssECVSeD9d3WzsJPLDQRJzRSFMRs6h7qo6AD2ID9566vfLAjwA==",
+      "type": "package",
+      "path": "uipath.mlservices.activities/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.MLServices.Activities.Design.dll",
+        "lib/net461/UiPath.MLServices.Activities.dll",
+        "lib/net461/UiPath.MLServices.dll",
+        "lib/net461/de/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/de/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/de/UiPath.MLServices.resources.dll",
+        "lib/net461/es-MX/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.MLServices.resources.dll",
+        "lib/net461/es/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/es/UiPath.MLServices.resources.dll",
+        "lib/net461/fr/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/fr/UiPath.MLServices.resources.dll",
+        "lib/net461/ja/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/ja/UiPath.MLServices.resources.dll",
+        "lib/net461/ko/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/ko/UiPath.MLServices.resources.dll",
+        "lib/net461/pt-BR/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.MLServices.resources.dll",
+        "lib/net461/pt/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/pt/UiPath.MLServices.resources.dll",
+        "lib/net461/ru/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/ru/UiPath.MLServices.resources.dll",
+        "lib/net461/tr/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/tr/UiPath.MLServices.resources.dll",
+        "lib/net461/zh-CN/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.MLServices.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/UiPath.MLServices.Activities.Design.dll",
+        "lib/net5.0-windows7.0/UiPath.MLServices.Activities.dll",
+        "lib/net5.0-windows7.0/UiPath.MLServices.dll",
+        "lib/net5.0-windows7.0/de/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/de/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es-MX/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/es/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/fr/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ja/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ko/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt-BR/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/pt/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/ru/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/tr/UiPath.MLServices.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.Activities.Design.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.Activities.resources.dll",
+        "lib/net5.0-windows7.0/zh-CN/UiPath.MLServices.resources.dll",
+        "uipath.mlservices.activities.1.2.1.nupkg.sha512",
+        "uipath.mlservices.activities.nuspec"
       ]
     },
     "UiPath.OCR.Activities/3.20.3": {
@@ -25433,6 +26098,31 @@
         "lib/net6.0/UiPath.OCR.Contracts.xml",
         "uipath.ocr.contracts.2.16.0.nupkg.sha512",
         "uipath.ocr.contracts.nuspec"
+      ]
+    },
+    "UiPath.OfficeLibs/1.0.0": {
+      "sha512": "AcXMguCTwHp2r06bq/WZ7Txh13B4Tq/Sug071r8CxXltQb4fjjLnWd7yP2EusMDGnXDac0NqQLW3EsZm64RVMQ==",
+      "type": "package",
+      "path": "uipath.officelibs/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Microsoft.Office.Interop.Excel.dll",
+        "lib/net461/Microsoft.Office.Interop.Outlook.dll",
+        "lib/net461/Microsoft.Office.Interop.PowerPoint.dll",
+        "lib/net461/Microsoft.Office.Interop.Word.dll",
+        "lib/net461/Microsoft.Vbe.Interop.dll",
+        "lib/net461/OFFICE.dll",
+        "lib/net461/UiPath.OfficeLibs.Package.dll",
+        "lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
+        "lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
+        "lib/net6.0-windows7.0/Microsoft.Office.Interop.PowerPoint.dll",
+        "lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
+        "lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll",
+        "lib/net6.0-windows7.0/OFFICE.dll",
+        "lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll",
+        "uipath.officelibs.1.0.0.nupkg.sha512",
+        "uipath.officelibs.nuspec"
       ]
     },
     "UiPath.OpenTelemetry.Contracts/2.1.3": {
@@ -26362,6 +27052,102 @@
         "uipath.vision.nuspec"
       ]
     },
+    "UiPath.WebAPI.Activities/1.20.1": {
+      "sha512": "Q0CtgHEeIo2QulIdlWXN8S3yDILYh0ev1J9icWy32KrQnvynFql0FSEm/gvkMRqcvVCXrnFBF84STNx6b9GLnw==",
+      "type": "package",
+      "path": "uipath.webapi.activities/1.20.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Runtime.Mapping.json",
+        "lib/net461/UiPath.Web.Activities.Design.dll",
+        "lib/net461/UiPath.Web.Activities.RulesLibrary.dll",
+        "lib/net461/de/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/es-MX/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/es/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/fr/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/ja/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/ko/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/pt-BR/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/pt/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/ru/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/tr/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/zh-CN/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net461/zu/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/UiPath.Web.Activities.Design.dll",
+        "lib/net6.0-windows7.0/UiPath.Web.Activities.RulesLibrary.dll",
+        "lib/net6.0-windows7.0/UiPath.Web.Activities.ViewModels.dll",
+        "lib/net6.0-windows7.0/de/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.Design.resources.dll",
+        "lib/net6.0/UiPath.Web.Activities.RulesLibrary.dll",
+        "lib/net6.0/UiPath.Web.Activities.ViewModels.dll",
+        "uipath.webapi.activities.1.20.1.nupkg.sha512",
+        "uipath.webapi.activities.nuspec"
+      ]
+    },
+    "UiPath.WebAPI.Activities.Runtime/1.20.1": {
+      "sha512": "/ZBvQZoakxhrvzpkx+LnrgU0B0qPicsVaunkJllfHCODxqh7PcJY1SmhjpOkzqtmlu4Hcwpk0+MwxV72tbHrHA==",
+      "type": "package",
+      "path": "uipath.webapi.activities.runtime/1.20.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/UiPath.Web.Activities.dll",
+        "lib/net461/UiPath.Web.dll",
+        "lib/net461/de/UiPath.Web.Activities.resources.dll",
+        "lib/net461/es-MX/UiPath.Web.Activities.resources.dll",
+        "lib/net461/es/UiPath.Web.Activities.resources.dll",
+        "lib/net461/fr/UiPath.Web.Activities.resources.dll",
+        "lib/net461/ja/UiPath.Web.Activities.resources.dll",
+        "lib/net461/ko/UiPath.Web.Activities.resources.dll",
+        "lib/net461/pt-BR/UiPath.Web.Activities.resources.dll",
+        "lib/net461/pt/UiPath.Web.Activities.resources.dll",
+        "lib/net461/ru/UiPath.Web.Activities.resources.dll",
+        "lib/net461/tr/UiPath.Web.Activities.resources.dll",
+        "lib/net461/zh-CN/UiPath.Web.Activities.resources.dll",
+        "lib/net461/zu/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/UiPath.Web.Activities.dll",
+        "lib/net6.0-windows7.0/UiPath.Web.dll",
+        "lib/net6.0-windows7.0/de/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0-windows7.0/zu/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/UiPath.Web.Activities.dll",
+        "lib/net6.0/UiPath.Web.dll",
+        "lib/net6.0/de/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/es-MX/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/es/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/fr/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/ja/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/ko/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/pt-BR/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/pt/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/ru/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/tr/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/zh-CN/UiPath.Web.Activities.resources.dll",
+        "lib/net6.0/zu/UiPath.Web.Activities.resources.dll",
+        "uipath.webapi.activities.runtime.1.20.1.nupkg.sha512",
+        "uipath.webapi.activities.runtime.nuspec"
+      ]
+    },
     "UiPath.WordsToNumbers/1.0.0": {
       "sha512": "p1u1iIto2+c/C7htoYyHYNoFgjLGxFirQ3zBbn3B+WnCZa4wsFoDcJc0UQiXiOPA+lXiwYwWnj5M07VTdZkPHw==",
       "type": "package",
@@ -26381,10 +27167,12 @@
     "net8.0-windows7.0": [
       "UiPath.Excel.Activities >= 2.23.4 <= 2.23.4",
       "UiPath.IntelligentOCR.Activities >= 6.5.2 <= 6.5.2",
-      "UiPath.Mail.Activities >= 1.23.1 <= 1.23.1",
+      "UiPath.MLServices.Activities >= 1.2.1 <= 1.2.1",
+      "UiPath.Mail.Activities >= 1.23.11 <= 1.23.11",
       "UiPath.System.Activities >= 24.10.3 <= 24.10.3",
       "UiPath.Testing.Activities >= 24.10.0 <= 24.10.0",
-      "UiPath.UIAutomation.Activities >= 24.10.0 <= 24.10.0"
+      "UiPath.UIAutomation.Activities >= 24.10.0 <= 24.10.0",
+      "UiPath.WebAPI.Activities >= 1.20.1 <= 1.20.1"
     ]
   },
   "packageFolders": {
@@ -26394,9 +27182,9 @@
     "restore": {
       "projectUniqueName": "DocumentUnderstanding",
       "projectName": "DocumentUnderstanding",
-      "projectPath": "C:\\Ronit\\Practice\\UiPath\\DocumentUnderstanding\\.local",
+      "projectPath": "C:\\Ronit\\UI Path\\Practice\\UiPath\\DocumentUnderstanding\\.local",
       "packagesPath": "C:\\Users\\ronit\\.nuget\\packages\\",
-      "outputPath": "C:\\Ronit\\Practice\\UiPath\\DocumentUnderstanding\\.local"
+      "outputPath": "C:\\Ronit\\UI Path\\Practice\\UiPath\\DocumentUnderstanding\\.local"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -26411,10 +27199,15 @@
             "target": "Package",
             "version": "[6.5.2, 6.5.2]"
           },
+          "UiPath.MLServices.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.2.1, 1.2.1]"
+          },
           "UiPath.Mail.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[1.23.1, 1.23.1]"
+            "version": "[1.23.11, 1.23.11]"
           },
           "UiPath.System.Activities": {
             "include": "Runtime",
@@ -26430,6 +27223,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[24.10.0, 24.10.0]"
+          },
+          "UiPath.WebAPI.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.20.1, 1.20.1]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Ronit\\UI Path\\PortableRuntimeIdentifierGraph.json"

@@ -1,22 +1,19 @@
 {
-  "name": "DocumentUnderstanding",
-  "projectId": "2d5d26ac-e9ae-423b-af40-1747b6c6eedf",
-  "description": "simple process on document understanding",
+  "name": "Demo123",
+  "projectId": "ac3e9ed0-bc33-426e-bc7d-f7929965773c",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.4]",
-    "UiPath.IntelligentOCR.Activities": "[6.5.2]",
-    "UiPath.Mail.Activities": "[1.23.11]",
-    "UiPath.MLServices.Activities": "[1.2.1]",
+    "UiPath.Mail.Activities": "[1.23.1]",
     "UiPath.System.Activities": "[24.10.3]",
     "UiPath.Testing.Activities": "[24.10.0]",
-    "UiPath.UIAutomation.Activities": "[24.10.0]",
-    "UiPath.WebAPI.Activities": "[1.20.1]"
+    "UiPath.UIAutomation.Activities": "[24.10.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "24.10.1.0",
+  "studioVersion": "24.10.4.0",
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
@@ -53,7 +50,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "d2dd9268-1549-4fb0-a357-14d0bd9fcf9d",
+      "uniqueId": "daed4112-e184-475d-8a78-da6ad2e107c0",
       "input": [],
       "output": []
     }

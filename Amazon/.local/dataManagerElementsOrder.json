@@ -12,17 +12,16 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ExtractionValidationRequired&Sequence_3",
-        "ValidatedExtraction&Sequence_3",
-        "ExtractedResult&Sequence_3",
-        "ValidatedClassificationResult&Sequence_3",
-        "DOM&Sequence_3",
-        "str_DocumentData&Sequence_3",
-        "ClassificationResult&Sequence_3",
-        "taxonomy&Sequence_1"
+        "FinalProduct&Sequence_1",
+        "dt_ExtractedData&Sequence_1",
+        "dt_Products&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "Dict"
+        "in_URL",
+        "in_Subject",
+        "in_email",
+        "in_filePath",
+        "in_Item"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

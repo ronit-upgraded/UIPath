@@ -39,60 +39,100 @@
     },
     {
       "Package": {
-        "Id": "UiPath.Mail.Activities",
-        "Version": "1.23.1"
+        "Id": "UiPath.IntelligentOCR.Activities",
+        "Version": "6.5.2"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\lib/net6.0/BouncyCastle.Cryptography.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\htmlagilitypack\\1.11.38\\lib/netstandard2.0/HtmlAgilityPack.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\mailkit\\4.4.0\\lib/net8.0/MailKit.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\bitmiracle.docotic.pdf\\8.6.13525-dev\\lib/netstandard2.0/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\fsharp.core\\4.7.1\\lib/netstandard2.0/FSharp.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.graph\\4.11.0\\lib/netstandard2.0/Microsoft.Graph.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.graph.core\\2.0.5\\lib/netstandard2.0/Microsoft.Graph.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.logging\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.Logging.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.Tokens.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\mimekit\\4.4.0\\lib/net8.0/MimeKit.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.3\\lib/netcoreapp3.0/Microsoft.Xaml.Behaviors.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.34.0\\lib/net6.0/System.IdentityModel.Tokens.Jwt.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\nlog\\4.5.11\\lib/netstandard2.0/NLog.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\ntextcat\\0.3.65\\lib/netstandard2.0/NTextCat.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\system.linq.async\\5.0.0\\lib/netcoreapp3.1/System.Linq.Async.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\system.linq.async.queryable\\5.0.0\\lib/netcoreapp3.1/System.Linq.Async.Queryable.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.codedworkflows\\24.10.0\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.connectionclient\\2.0.3\\lib/net5.0/ConnectionClient.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/Microsoft.Exchange.WebServices.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/Office.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Api.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/UiPath.Mail.Activities.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/UiPath.Mail.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib/net6.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\tinycsvparser\\2.5.2\\lib/netstandard2.1/TinyCsvParser.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.BrowserSubprocess.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.BrowserSubprocess.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.Core.Runtime.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.Wpf.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/Ijwhost.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/UiPath.CefSharpBundle.NetCore.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/chrome_elf.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/d3dcompiler_47.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/libEGL.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/libGLESv2.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/libcef.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/msvcp140.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/swiftshader/libEGL.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/swiftshader/libGLESv2.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vcruntime140.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vcruntime140_1.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vk_swiftshader.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vulkan-1.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.17.1\\lib/net6.0/UiPath.DocumentProcessing.Contracts.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.5.2\\lib/net6.0/UiPath.DocumentUnderstanding.Digitizer.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/Emgu.CV.Bitmap.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/Emgu.CV.Platform.NetStandard.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/concrt140.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/cvextern.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_1.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_2.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_atomic_wait.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_codecvt_ids.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/vcruntime140.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/vcruntime140_1.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.DocumentUnderstanding.Contracts.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.DocumentUnderstanding.Persistence.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.IntelligentOCR.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.IntelligentOCR.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.IntelligentOCR.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ClassificationStation.Host.Local.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ClassificationStation.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Data.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.DocumentClassification.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Host.Local.Infrastructure.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ImageProcessing.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Language.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Localization.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.OutOfProcessUi.Common.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.OutOfProcessUi.Host.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.PDF.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.PositionBasedExtraction.TemplateManager.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.PositionBasedExtraction.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.TableProcessing.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.TaxonomyManager.Host.Local.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.TaxonomyManager.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Telemetry.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Utils.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.Host.Local.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.Integration.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.ValueParsing.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.WPF.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.activities\\3.20.3\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.activities\\3.20.3\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.activities\\3.20.3\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.1.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.platform\\24.10.3\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.telemetry.client\\2.1.3\\lib/netstandard2.0/TelemetryClient.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.telemetry.client\\2.1.3\\lib/netstandard2.0/TelemetryClient.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\lib/netstandard2.0/Numsense.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2"
     },
     {
       "Package": {
@@ -272,100 +312,98 @@
     },
     {
       "Package": {
-        "Id": "UiPath.IntelligentOCR.Activities",
-        "Version": "6.5.2"
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.23.11"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\bitmiracle.docotic.pdf\\8.6.13525-dev\\lib/netstandard2.0/BitMiracle.Docotic.Pdf.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\fsharp.core\\4.7.1\\lib/netstandard2.0/FSharp.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\7.0.1\\lib/netstandard2.0/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.caching.memory\\2.2.0\\lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\azure.core\\1.18.0\\lib/net5.0/Azure.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\lib/net6.0/BouncyCastle.Cryptography.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis\\1.55.0\\lib/netstandard2.0/Google.Apis.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.auth\\1.55.0\\lib/netstandard2.0/Google.Apis.Auth.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.calendar.v3\\1.55.0.2554\\lib/netstandard2.0/Google.Apis.Calendar.v3.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.core\\1.55.0\\lib/netstandard2.0/Google.Apis.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.gmail.v1\\1.55.0.2510\\lib/netstandard2.0/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\google.apis.peopleservice.v1\\1.55.0.2567\\lib/netstandard2.0/Google.Apis.PeopleService.v1.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\htmlagilitypack\\1.11.38\\lib/netstandard2.0/HtmlAgilityPack.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\mailkit\\4.7.1.1\\lib/net8.0/MailKit.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.24\\lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\lib/netstandard1.4/Microsoft.Rest.ClientRuntime.Azure.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.3\\lib/netcoreapp3.0/Microsoft.Xaml.Behaviors.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.graph\\4.11.0\\lib/netstandard2.0/Microsoft.Graph.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.graph.core\\2.0.5\\lib/netstandard2.0/Microsoft.Graph.Core.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identity.client\\4.35.1\\lib/netcoreapp2.1/Microsoft.Identity.Client.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.Abstractions.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.logging\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.Logging.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.2\\lib/netstandard2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.34.0\\lib/net6.0/Microsoft.IdentityModel.Tokens.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\mimekit\\4.7.1\\lib/net8.0/MimeKit.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\nlog\\4.5.11\\lib/netstandard2.0/NLog.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\ntextcat\\0.3.65\\lib/netstandard2.0/NTextCat.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\polly\\7.1.0\\lib/netstandard2.0/Polly.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.34.0\\lib/net6.0/System.IdentityModel.Tokens.Jwt.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\system.linq.async\\5.0.0\\lib/netcoreapp3.1/System.Linq.Async.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\system.linq.async.queryable\\5.0.0\\lib/netcoreapp3.1/System.Linq.Async.Queryable.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\system.memory.data\\1.0.2\\lib/netstandard2.0/System.Memory.Data.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\system.runtime.caching\\6.0.0\\runtimes/win/lib/net6.0/System.Runtime.Caching.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\tinycsvparser\\2.5.2\\lib/netstandard2.1/TinyCsvParser.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.BrowserSubprocess.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.BrowserSubprocess.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.Core.Runtime.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.Wpf.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/CefSharp.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/Ijwhost.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/UiPath.CefSharpBundle.NetCore.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/chrome_elf.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/d3dcompiler_47.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/libEGL.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/libGLESv2.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/libcef.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/msvcp140.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/swiftshader/libEGL.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/swiftshader/libGLESv2.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vcruntime140.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vcruntime140_1.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vk_swiftshader.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.cefsharpbundle.netcore\\1.9.0\\lib/net6.0-windows7.0/vulkan-1.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.17.1\\lib/net6.0/UiPath.DocumentProcessing.Contracts.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.documentunderstanding.digitizer\\2.5.2\\lib/net6.0/UiPath.DocumentUnderstanding.Digitizer.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/Emgu.CV.Bitmap.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/Emgu.CV.Platform.NetStandard.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/concrt140.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/cvextern.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_1.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_2.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_atomic_wait.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/msvcp140_codecvt_ids.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/vcruntime140.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.emgucvbundle\\1.1.0\\lib/net5.0/vcruntime140_1.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.DocumentUnderstanding.Contracts.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.DocumentUnderstanding.Persistence.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.IntelligentOCR.Activities.Design.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.IntelligentOCR.Activities.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.IntelligentOCR.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ClassificationStation.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ClassificationStation.Host.Local.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Data.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.DocumentClassification.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Host.Local.Infrastructure.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ImageProcessing.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Language.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Localization.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.OutOfProcessUi.Common.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.OutOfProcessUi.Host.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.PDF.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.PositionBasedExtraction.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.PositionBasedExtraction.TemplateManager.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.TableProcessing.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.TaxonomyManager.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.TaxonomyManager.Host.Local.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Telemetry.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.Utils.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.Host.Local.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.Integration.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.ValidationStation.ValueParsing.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib/net6.0-windows7.0/UiPath.SmartData.WPF.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.activities\\3.20.3\\lib/net6.0-windows7.0/UiPath.OCR.Activities.Design.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.activities\\3.20.3\\lib/net6.0-windows7.0/UiPath.OCR.Activities.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.activities\\3.20.3\\lib/net6.0-windows7.0/UiPath.OCR.Core.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib/net6.0-windows7.0/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\lib/net5.0-windows7.0/UiPath.Activities.RuntimeGovernance.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.codedworkflows\\24.10.0\\lib/net6.0-windows7.0/UiPath.CodedWorkflows.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.connectionclient\\2.0.4\\lib/net5.0/ConnectionClient.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/Interop.Domino.UiPath.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Api.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/UiPath.Mail.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/UiPath.Mail.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib/net6.0-windows7.0/UiPath.MainSessionServer.Shared.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/OFFICE.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib/net6.0-windows7.0/UiPath.OfficeLibs.Package.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.1.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.platform\\24.10.3\\lib/net6.0-windows7.0/UiPath.Platform.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.telemetry.client\\2.1.3\\lib/netstandard2.0/TelemetryClient.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\lib/netstandard2.0/Numsense.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.telemetry.client\\2.1.3\\lib/netstandard2.0/TelemetryClient.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MLServices.Activities",
+        "Version": "1.2.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1\\lib/net5.0-windows7.0/UiPath.MLServices.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1\\lib/net5.0-windows7.0/UiPath.MLServices.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1\\lib/net5.0-windows7.0/UiPath.MLServices.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.opentelemetry.contracts\\2.1.3\\lib/netstandard2.0/UiPath.OpenTelemetry.Contracts.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.telemetry.client\\2.1.3\\lib/netstandard2.0/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.20.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib/net6.0-windows7.0/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\newtonsoft.json\\13.0.3\\lib/net6.0/Newtonsoft.Json.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\restsharp\\106.15.0\\lib/netstandard2.0/RestSharp.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib/netstandard2.0/System.IO.Abstractions.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.platform\\24.10.3\\lib/net6.0-windows7.0/UiPath.Platform.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.RulesLibrary.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.ViewModels.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net6.0-windows7.0/UiPath.Web.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib/net6.0-windows7.0/UiPath.Web.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1"
     }
   ],
   "Conflicts": [],
@@ -383,6 +421,11 @@
           "Item2": "[4.3.0, )"
         }
       ]
+    },
+    "AvalonEdit": {
+      "Id": "AvalonEdit",
+      "Version": "6.1.3.50",
+      "Dependencies": []
     },
     "Azure.Core": {
       "Id": "Azure.Core",
@@ -438,7 +481,7 @@
     },
     "BouncyCastle.Cryptography": {
       "Id": "BouncyCastle.Cryptography",
-      "Version": "2.3.0",
+      "Version": "2.4.0",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -576,11 +619,15 @@
     },
     "MailKit": {
       "Id": "MailKit",
-      "Version": "4.4.0",
+      "Version": "4.7.1.1",
       "Dependencies": [
         {
+          "Item1": "System.Formats.Asn1",
+          "Item2": "[8.0.1, )"
+        },
+        {
           "Item1": "MimeKit",
-          "Item2": "[4.4.0, )"
+          "Item2": "[4.7.1, )"
         }
       ]
     },
@@ -1596,23 +1643,19 @@
     },
     "MimeKit": {
       "Id": "MimeKit",
-      "Version": "4.4.0",
+      "Version": "4.7.1",
       "Dependencies": [
-        {
-          "Item1": "System.Runtime.CompilerServices.Unsafe",
-          "Item2": "[6.0.0, )"
-        },
         {
           "Item1": "System.Security.Cryptography.Pkcs",
           "Item2": "[8.0.0, )"
         },
         {
-          "Item1": "System.Text.Encoding.CodePages",
-          "Item2": "[8.0.0, )"
+          "Item1": "System.Formats.Asn1",
+          "Item2": "[8.0.1, )"
         },
         {
           "Item1": "BouncyCastle.Cryptography",
-          "Item2": "[2.3.0, )"
+          "Item2": "[2.4.0, )"
         }
       ]
     },
@@ -1867,6 +1910,11 @@
     "Portable.BouncyCastle": {
       "Id": "Portable.BouncyCastle",
       "Version": "1.8.9",
+      "Dependencies": []
+    },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "106.15.0",
       "Dependencies": []
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": {
@@ -2467,7 +2515,7 @@
     },
     "System.Formats.Asn1": {
       "Id": "System.Formats.Asn1",
-      "Version": "8.0.0",
+      "Version": "8.0.1",
       "Dependencies": []
     },
     "System.Globalization": {
@@ -4140,8 +4188,13 @@
     },
     "System.Text.Encoding.CodePages": {
       "Id": "System.Text.Encoding.CodePages",
-      "Version": "8.0.0",
-      "Dependencies": []
+      "Version": "6.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[6.0.0, )"
+        }
+      ]
     },
     "System.Text.Encoding.Extensions": {
       "Id": "System.Text.Encoding.Extensions",
@@ -4458,7 +4511,7 @@
     },
     "UiPath.ConnectionClient": {
       "Id": "UiPath.ConnectionClient",
-      "Version": "2.0.3",
+      "Version": "2.0.4",
       "Dependencies": [
         {
           "Item1": "Newtonsoft.Json",
@@ -4698,7 +4751,7 @@
     },
     "UiPath.Mail.Activities": {
       "Id": "UiPath.Mail.Activities",
-      "Version": "1.23.1",
+      "Version": "1.23.11",
       "Dependencies": [
         {
           "Item1": "Google.Apis.Calendar.v3",
@@ -4718,7 +4771,7 @@
         },
         {
           "Item1": "MailKit",
-          "Item2": "[4.4.0, )"
+          "Item2": "[4.7.1.1, )"
         },
         {
           "Item1": "Microsoft.Extensions.FileSystemGlobbing",
@@ -4738,7 +4791,7 @@
         },
         {
           "Item1": "System.Configuration.ConfigurationManager",
-          "Item2": "[5.0.0, )"
+          "Item2": "[6.0.0, )"
         },
         {
           "Item1": "System.Data.DataSetExtensions",
@@ -4758,7 +4811,7 @@
         },
         {
           "Item1": "System.Security.Cryptography.ProtectedData",
-          "Item2": "[5.0.0, )"
+          "Item2": "[6.0.0, )"
         },
         {
           "Item1": "System.ValueTuple",
@@ -4770,11 +4823,15 @@
         },
         {
           "Item1": "UiPath.CodedWorkflows",
-          "Item2": "[24.4.0-preview, )"
+          "Item2": "[24.10.0, )"
         },
         {
           "Item1": "UiPath.ConnectionClient",
-          "Item2": "[2.0.3, )"
+          "Item2": "[2.0.4, )"
+        },
+        {
+          "Item1": "UiPath.OfficeLibs",
+          "Item2": "[1.0.0, )"
         },
         {
           "Item1": "UiPath.Platform",
@@ -4783,6 +4840,20 @@
         {
           "Item1": "UiPath.Telemetry.Client",
           "Item2": "[2.1.3, )"
+        }
+      ]
+    },
+    "UiPath.MLServices.Activities": {
+      "Id": "UiPath.MLServices.Activities",
+      "Version": "1.2.1",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.5.3, )"
         }
       ]
     },
@@ -4845,6 +4916,11 @@
           "Item2": "[5.0.3, )"
         }
       ]
+    },
+    "UiPath.OfficeLibs": {
+      "Id": "UiPath.OfficeLibs",
+      "Version": "1.0.0",
+      "Dependencies": []
     },
     "UiPath.OpenTelemetry.Contracts": {
       "Id": "UiPath.OpenTelemetry.Contracts",
@@ -5183,6 +5259,58 @@
         }
       ]
     },
+    "UiPath.WebAPI.Activities": {
+      "Id": "UiPath.WebAPI.Activities",
+      "Version": "1.20.1",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.WebAPI.Activities.Runtime",
+          "Item2": "[1.20.1, )"
+        },
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[6.1.3.50, )"
+        },
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.15.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[23.4.1, )"
+        }
+      ]
+    },
+    "UiPath.WebAPI.Activities.Runtime": {
+      "Id": "UiPath.WebAPI.Activities.Runtime",
+      "Version": "1.20.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.7.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[13.0.1, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.15.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[23.4.1, )"
+        }
+      ]
+    },
     "UiPath.WordsToNumbers": {
       "Id": "UiPath.WordsToNumbers",
       "Version": "1.0.0",
@@ -5204,6 +5332,16 @@
         "C:\\Users\\ronit\\.nuget\\packages\\automapper\\9.0.0\\lib\\netstandard2.0\\AutoMapper.dll"
       ],
       "Path": "C:\\Users\\ronit\\.nuget\\packages\\automapper\\9.0.0"
+    },
+    {
+      "Package": {
+        "Id": "AvalonEdit",
+        "Version": "6.1.3.50"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\avalonedit\\6.1.3.50\\lib\\net6.0-windows7.0\\ICSharpCode.AvalonEdit.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\avalonedit\\6.1.3.50"
     },
     {
       "Package": {
@@ -5238,12 +5376,12 @@
     {
       "Package": {
         "Id": "BouncyCastle.Cryptography",
-        "Version": "2.3.0"
+        "Version": "2.4.0"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\lib\\net6.0\\BouncyCastle.Cryptography.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0\\lib\\net6.0\\BouncyCastle.Cryptography.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\bouncycastle.cryptography\\2.4.0"
     },
     {
       "Package": {
@@ -5369,12 +5507,12 @@
     {
       "Package": {
         "Id": "MailKit",
-        "Version": "4.4.0"
+        "Version": "4.7.1.1"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\mailkit\\4.4.0\\lib\\net8.0\\MailKit.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\mailkit\\4.7.1.1\\lib\\net8.0\\MailKit.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\mailkit\\4.4.0"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\mailkit\\4.7.1.1"
     },
     {
       "Package": {
@@ -6046,12 +6184,12 @@
     {
       "Package": {
         "Id": "MimeKit",
-        "Version": "4.4.0"
+        "Version": "4.7.1"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\mimekit\\4.4.0\\lib\\net8.0\\MimeKit.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\mimekit\\4.7.1\\lib\\net8.0\\MimeKit.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\mimekit\\4.4.0"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\mimekit\\4.7.1"
     },
     {
       "Package": {
@@ -6143,6 +6281,16 @@
         "C:\\Users\\ronit\\.nuget\\packages\\portable.bouncycastle\\1.8.9\\lib\\netstandard2.0\\BouncyCastle.Crypto.dll"
       ],
       "Path": "C:\\Users\\ronit\\.nuget\\packages\\portable.bouncycastle\\1.8.9"
+    },
+    {
+      "Package": {
+        "Id": "RestSharp",
+        "Version": "106.15.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\restsharp\\106.15.0\\lib\\netstandard2.0\\RestSharp.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\restsharp\\106.15.0"
     },
     {
       "Package": {
@@ -6876,12 +7024,12 @@
     {
       "Package": {
         "Id": "System.Formats.Asn1",
-        "Version": "8.0.0"
+        "Version": "8.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\system.formats.asn1\\8.0.0\\lib\\net8.0\\System.Formats.Asn1.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\system.formats.asn1\\8.0.1\\lib\\net8.0\\System.Formats.Asn1.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\system.formats.asn1\\8.0.0"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\system.formats.asn1\\8.0.1"
     },
     {
       "Package": {
@@ -7595,12 +7743,12 @@
     {
       "Package": {
         "Id": "System.Text.Encoding.CodePages",
-        "Version": "8.0.0"
+        "Version": "6.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\runtimes\\win\\lib\\net8.0\\System.Text.Encoding.CodePages.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\runtimes\\win\\lib\\net6.0\\System.Text.Encoding.CodePages.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0"
     },
     {
       "Package": {
@@ -7822,12 +7970,12 @@
     {
       "Package": {
         "Id": "UiPath.ConnectionClient",
-        "Version": "2.0.3"
+        "Version": "2.0.4"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.connectionclient\\2.0.3\\lib\\net5.0\\ConnectionClient.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.connectionclient\\2.0.4\\lib\\net5.0\\ConnectionClient.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.connectionclient\\2.0.3"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.connectionclient\\2.0.4"
     },
     {
       "Package": {
@@ -7908,8 +8056,8 @@
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.IntelligentOCR.Activities.Design.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.IntelligentOCR.Activities.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.IntelligentOCR.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ClassificationStation.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ClassificationStation.Host.Local.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ClassificationStation.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.Data.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.DocumentClassification.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.Host.Local.Infrastructure.dll",
@@ -7920,18 +8068,18 @@
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.OutOfProcessUi.Host.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.OutOfProcessUi.Host.exe",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.PDF.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.PositionBasedExtraction.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.PositionBasedExtraction.TemplateManager.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.PositionBasedExtraction.TemplateManager.exe",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.PositionBasedExtraction.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.TableProcessing.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.TaxonomyManager.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.TaxonomyManager.Host.Local.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.TaxonomyManager.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.Telemetry.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.Utils.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ValidationStation.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ValidationStation.Host.Local.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ValidationStation.Integration.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ValidationStation.ValueParsing.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.ValidationStation.dll",
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2\\lib\\net6.0-windows7.0\\UiPath.SmartData.WPF.dll"
       ],
       "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.intelligentocr.activities\\6.5.2"
@@ -7939,21 +8087,30 @@
     {
       "Package": {
         "Id": "UiPath.Mail.Activities",
-        "Version": "1.23.1"
+        "Version": "1.23.11"
       },
       "Assemblies": [
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\Interop.Domino.UiPath.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\Microsoft.Exchange.WebServices.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Outlook.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Word.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\Office.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.Api.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.Design.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\UiPath.Mail.dll",
-        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1\\lib\\net6.0-windows7.0\\UiPath.MainSessionServer.Shared.dll"
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\Interop.Domino.UiPath.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.Api.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\UiPath.Mail.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\UiPath.Mail.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11\\lib\\net6.0-windows7.0\\UiPath.MainSessionServer.Shared.dll"
       ],
-      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.1"
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.mail.activities\\1.23.11"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MLServices.Activities",
+        "Version": "1.2.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1\\lib\\net5.0-windows7.0\\UiPath.MLServices.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1\\lib\\net5.0-windows7.0\\UiPath.MLServices.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1\\lib\\net5.0-windows7.0\\UiPath.MLServices.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.mlservices.activities\\1.2.1"
     },
     {
       "Package": {
@@ -7976,6 +8133,22 @@
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0\\lib\\net6.0-windows7.0\\UiPath.OCR.Contracts.dll"
       ],
       "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.ocr.contracts\\2.16.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OfficeLibs",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Outlook.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.PowerPoint.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\Microsoft.Office.Interop.Word.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\Microsoft.Vbe.Interop.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\OFFICE.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0\\lib\\net6.0-windows7.0\\UiPath.OfficeLibs.Package.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.officelibs\\1.0.0"
     },
     {
       "Package": {
@@ -8109,6 +8282,29 @@
         "C:\\Users\\ronit\\.nuget\\packages\\uipath.vision\\3.13.2\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.vision\\3.13.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.20.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib\\net6.0-windows7.0\\UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib\\net6.0-windows7.0\\UiPath.Web.Activities.RulesLibrary.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1\\lib\\net6.0-windows7.0\\UiPath.Web.Activities.ViewModels.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities\\1.20.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities.Runtime",
+        "Version": "1.20.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib\\net6.0-windows7.0\\UiPath.Web.Activities.dll",
+        "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1\\lib\\net6.0-windows7.0\\UiPath.Web.dll"
+      ],
+      "Path": "C:\\Users\\ronit\\.nuget\\packages\\uipath.webapi.activities.runtime\\1.20.1"
     },
     {
       "Package": {
